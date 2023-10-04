@@ -24,6 +24,8 @@ export const DialTimeText = memo(
             ? `rotate(${90 + dialPosition} 540 540)`
             : 'rotate(90 540 540)'
         }
+        user-select= "none"
+        pointer-events= "none"
       >
         {dialAppear ? angleToTime(dialPosition) : <TextClock />}
       </text>
